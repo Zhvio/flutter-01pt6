@@ -22,8 +22,8 @@ class _RegisterPageState extends State<RegisterPage> {
       var url = Uri.parse('https://belajar-api.unama.ac.id/api/register');
       var data = {
         'email': _emailController.text,
-        'name': _emailController.text,
-        'password': _emailController.text,
+        'name': _nameController.text,
+        'password': _passwordController.text,
       };
       var response = await http.post(url, body: data, headers: {
         'Accept': 'application/json',
